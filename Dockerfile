@@ -19,7 +19,7 @@ COPY gradle /app/gradle
 RUN ./gradlew build --no-daemon
 
 # Jalankan jar file yang sudah dihasilkan
-CMD ["java", "-jar", "/app/build/libs/productApi-0.0.1.jar"]
+CMD ["java", "-jar", "/app/build/libs/productApi-0.0.1-SNAPSHOT.jar"]
 
 ## local
 ## Gunakan image JDK 17 untuk menjalankan Spring Boot
